@@ -127,22 +127,16 @@ closeDetails();
 function buyNow(name, imagePath, price) {
   const phone = "250784169176";
   
-  const imageUrl =
-    `${imagePath}\n`;
-  
-  const message =
-    `🛒 NEW ORDER
+  let message =
+    `🛒 NEW ORDER : 
 
-👟 Product: ${name}
-\n
-🖼 Image:
-${imageUrl}
-\n
-💰 Price: ${price} RWF\n
+ Product: ${name}+
+ Image: ${imagePath}+
+ Price: ${price}RWF
 `;
   
   window.open(
-    `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+    `https://wa.me/${phone}?text=${(message)}\n\n`,
     "_blank"
   );
 }
