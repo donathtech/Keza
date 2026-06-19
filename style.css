@@ -361,7 +361,7 @@ footer a {
     color: white ;
     background:#3A0AE7;
     border:2px double #01FF0C;
-    border-radius:0px 10px 10px 0;
+    border-radius:0px 10px 10px 0px;
     
 }
 h4{
@@ -370,7 +370,6 @@ h4{
     width:100%;
     position:fixed;
 background: none;
-border-radius:66px 66px 0px 0px;
 text-align: center;
-font-size:12px;
+font-size:15px;
 }
