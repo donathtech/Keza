@@ -6,6 +6,7 @@ font-family:sans-serif;
 }
 
 body{
+    border:2px solid blue;
     
 background: white;
 overflow-x:hidden;
@@ -21,14 +22,14 @@ display:flex;
 justify-content:space-between;
 align-items:center;border-radius: 0px 0px 50px 50px;
 padding:20px 8%;
-background: linear-gradient(#0E24DE,#0E1DDE4F,#10E70B);
 backdrop-filter:blur(0px);
 z-index:1000;
+animation:k 1.5s infinite ;
 }
 
 .logo{
 color: white;
-  text-shadow: 1px 2px  #0A0CD3;
+  
   text-decoration:underline;
 font-size:12px;
 font-weight:7000;
@@ -52,11 +53,9 @@ color:#D91BB2;
 }
 
 .menu-btn{
+animation:d 0.5s infinite ;
 display:none;
 background: white;
-border: 3px solid #C60EDE;
-border-bottom-style: none;
-box-shadow: 0 4px 0.4px #0D52F8;
  border-radius: 5px;
  color: black;
 font-size:25px;
@@ -64,7 +63,6 @@ cursor:pointer;
 }
 
 /* HERO */
-
 .hero{
 height:50vh;
 
@@ -365,11 +363,34 @@ footer a {
     
 }
 h4{
-    bottom:2px; 
-    color:#140988 ;
+    animation: h 4s infinite ;
+    bottom:-50px; 
     width:100%;
     position:fixed;
 background: none;
 text-align: center;
 font-size:15px;
+}
+@keyframes k {
+    from{ background: linear-gradient(#0E24DE,#0E1DDE4F,#10E70B);
+    }
+    to{background: linear-gradient(#10E70B,#0E1DDE4F,
+    #0E24DE);}
+}
+@keyframes d{
+    from{border:3px solid #E9FF01;
+        border-bottom-style: none;
+    }
+    to{border:3px solid #720BD8;
+        border-bottom-style: none;
+    }
+}
+@keyframes h{
+    from{ color:#FFFFFF00 }
+    to{color:#0C1F6B;
+        bottom:508px;
+    }
+}
+.menu-btn:active{
+    transform: translatey(4px);
 }
