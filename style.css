@@ -16,6 +16,8 @@ overflow-x:hidden;
 header{
 position:fixed;
 top:0;
+background: linear-gradient(#0E24DE,#0E1DDE4F,#10E70B);
+  
 width:100%;
 display:flex;
 justify-content:space-between;
@@ -23,12 +25,10 @@ align-items:center;border-radius: 0px 0px 50px 50px;
 padding:20px 8%;
 backdrop-filter:blur(0px);
 z-index:1000;
-animation:k 1.5s infinite ;
 }
 
 .logo{
 color: white;
-  
   text-decoration:underline;
 font-size:12px;
 font-weight:7000;
@@ -52,7 +52,6 @@ color:#D91BB2;
 }
 
 .menu-btn{
-animation:d 0.5s infinite ;
 display:none;
 background: white;
  border-radius: 5px;
@@ -370,26 +369,7 @@ background: none;
 text-align: center;
 font-size:15px;
 }
-@keyframes k {
-    from{ background: linear-gradient(#0E24DE,#0E1DDE4F,#10E70B);
-    }
-    to{background: linear-gradient(#10E70B,#0E1DDE4F,
-    #0E24DE);}
-}
-@keyframes d{
-    from{border:3px solid #E9FF01;
-        border-bottom-style: none;
-    }
-    to{border:3px solid #720BD8;
-        border-bottom-style: none;
-    }
-}
-@keyframes h{
-    from{ color:#FFFFFF00 }
-    to{color:#0C1F6B;
-        bottom:508px;
-    }
-}
+
 .menu-btn:active{
     transform: translatey(4px);
 }
